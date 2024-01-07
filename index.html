@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <!--Colors available: aqua, black, blue, fuchsia, gray, green, lime, maroon, navy, olive, purple, red, silver, teal, white, and yellow
+  or rgb(x,y,z)-->
+  <center>
+    <head>
+      <!--Used only for metadata; body contains actual data-->
+    </head>
+    <body style="background-color:rgb(60, 60, 60); font-size:26px"> <!--dark gray-->
+      <h1 style="color:rgb(200, 180, 160);">Welcome to Featherworks!</h1>
+      <button type="button" onclick="textify()">Produce text!</button>
+      <p id="textme"></p>
+    </body>
+  </center>
+  <script>
+    function textify() {
+      document.getElementById("textme").innerHTML = "Greetings!";
+      document.getElementById("textme").style.color = "purple";
+    }
+  </script>
+</html>
