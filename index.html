@@ -21,11 +21,14 @@
 
   <script>
     function trimString() {
-      let stringy = document.getElementById("process_me").value; // String
-      document.getElementById("output").innerHTML = stringy;
+      const stringy = document.getElementById("process_me").value; // String from text box
+      // Algorithm:
+      // Use regular expression to strip brackets such as [] or <> and anything between them
+      const stringcheese = stringy.replace(/[\[({<].*?[\])}>]/g, '');
+      // Set the paragraph to equal this new string
+      document.getElementById("output").innerHTML = stringcheese;
     }
     </script>
-
   <!--OLD SCRIPT for setting a paragraph to have a simple greeting-->
   <!--
   <script>
